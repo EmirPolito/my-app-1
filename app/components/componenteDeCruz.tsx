@@ -69,6 +69,7 @@ const agentStates = [
   { id: 2, name: "Agent Beta", state: "Idle", color: "bg-muted" },
   { id: 3, name: "Agent Gamma", state: "Processing", color: "bg-orange-500" },
   { id: 4, name: "Agent Delta", state: "Paused", color: "bg-blue-500" },
+  { id: 5, name: "Agent Kronos", state: "Start", color: "bg-pink-500" }
 ]
 
 export default function CrossLayoutLines() {
@@ -118,8 +119,8 @@ export default function CrossLayoutLines() {
   }, [])
 
   return (
-    <section className="w-full py-5">
-      <div className="relative max-w-6xl mx-auto">
+    <section className="w-full py-0">
+      <div className="relative max-w-7xl mx-auto">
         {/* Líneas estructurales */}
         <div className="absolute top-0 left-0 right-0 h-px bg-border/90" />
         <div className="absolute top-1/2 left-0 right-0 h-px bg-border/90" />
@@ -130,7 +131,7 @@ export default function CrossLayoutLines() {
           {/* ───────────────────────────── */}
           {/* Upper Left – Audit Trail */}
           {/* ───────────────────────────── */}
-          <div className="p-15 space-y-10 overflow-hidden">
+          <div className="p-10 space-y-15 overflow-hidden">
             <div>
               <h3 className="text-primary-general text-xl font-semibold mb-2 text-foreground">
                 Audit Trail
@@ -186,7 +187,7 @@ export default function CrossLayoutLines() {
           {/* ───────────────────────────── */}
           {/* Upper Right – Live Agent States */}
           {/* ───────────────────────────── */}
-          <div className="p-15 space-y-20 overflow-hidden">
+          <div className="p-10 space-y-20 overflow-hidden">
             <div>
               <h3 className="text-primary-general text-xl font-semibold mb-2 text-foreground">
                 Live Agent States
@@ -197,7 +198,7 @@ export default function CrossLayoutLines() {
             </div>
 
 
-            <div className="space-y-4">
+            <div className="space-y-2">
               {agentStates.map((agent, index) => (
                 <div
                   key={agent.id}
@@ -229,7 +230,7 @@ export default function CrossLayoutLines() {
           {/* ───────────────────────────── */}
           {/* Bottom Left – Approval Queue */}
           {/* ───────────────────────────── */}
-          <div className="p-15 space-y-30 overflow-hidden">
+          <div className="p-10 space-y-35 overflow-hidden">
             <div>
               <h3 className="text-primary-general text-xl font-semibold mb-2 text-foreground">
                 Approval Queue
@@ -314,7 +315,7 @@ export default function CrossLayoutLines() {
           {/* ───────────────────────────── */}
           {/* Bottom Right – Guardrail Engine */}
           {/* ───────────────────────────── */}
-          <div className="p-15 space-y-15 overflow-hidden">
+          <div className="p-10 space-y-15 overflow-hidden">
             <div>
               <h3 className="text-primary-general text-xl font-semibold mb-2 text-foreground">
                 Guardrail Engine

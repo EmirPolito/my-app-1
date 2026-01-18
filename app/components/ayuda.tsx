@@ -100,7 +100,7 @@ export default function ContenidoBlog() {
           transition={{ duration: 0.7, ease: "easeOut" }}
           className="text-center mb-30"
         >
-          <h1 className="text-primary-general md:text-5xl font-bold mb-3">
+          <h1 className="text-primary-general md:text-5xl font-semibold mb-3">
             Centro de Ayuda
           </h1>
 
@@ -134,10 +134,10 @@ export default function ContenidoBlog() {
                   onMouseLeave={() => setHoveredId(null)}
                 >
                   <div className="mb-5">
-                    <h2 className="text-primary-general text-2xl font-semibold mb-5">
+                    <h2 className="text-primary-general text-xl font-semibold mb-5">
                       {item.title}
                     </h2>
-                    <p className="text-primary-color-text  text-base leading-relaxed">
+                    <p className="text-primary-color-text  text-accent leading-relaxed">
                       {item.description}
                     </p>
                   </div>

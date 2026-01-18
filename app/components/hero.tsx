@@ -12,12 +12,12 @@ export function Hero() {
         titleComponent={
           <div className="flex flex-col items-center text-center gap-1 pt-1">
             {/* Title */}
-            <h1 className="font-bold md:text-[4rem] text-primary-general">
+            <h1 className="text-primary-general font-bold md:text-[4rem] text-text-heading">
               Titulo
             </h1>
 
             {/* Description */}
-            <p className="pt-0 md:text-1xl font-sm text-primary-color-text">
+            <p className="text-primary-color-text pt-0 md:text-1xl font-sm text-text-body">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
               dignissimos recusandae dolores non.{" "}
             </p>
@@ -29,9 +29,9 @@ export function Hero() {
                   size="lg"
                   className="
                     cursor-pointer
-                    text-primary2
-                    bg-primary-general
-                    hover:bg-primary3/90
+                    text-surface-primary
+                    bg-text-heading
+                    hover:bg-accent-brand-hover/90
                   "
                 >
                   Get Started

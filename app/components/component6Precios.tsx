@@ -76,7 +76,7 @@ export default function Component6Precios() {
 
     return (
         <div className="min-h-screen bg-background text-foreground"> {/* min-h-screen: altura mínima pantalla completa, bg-background: fondo, text-foreground: color principal de texto */}
-            <main className="py-16"> {/* py-16: padding vertical grande */}
+            <main className="py-10"> {/* py-16: padding vertical grande */}
                 <div className="container"> {/* container: ancho máximo y centrado */}
                     {/* Hero Section */}
                     <div className="text-center mb-10"> {/* text-center: centra texto, mb-12: margen inferior */}
@@ -126,15 +126,15 @@ export default function Component6Precios() {
                                         Popular
                                     </div>
                                 )}
-                                <div className="text-center mb-6"> {/* text-center: centra texto, mb-6: margen inferior */}
-                                    <h3 className="text-xl font-bold text-foreground mb-1"> {/* text-xl: grande, font-bold: negrita, text-foreground: color principal, mb-1: margen inferior */}
+                                <div className="text-center mb-7"> {/* text-center: centra texto, mb-6: margen inferior */}
+                                    <h3 className="text-xl font-bold text-foreground mb-0"> {/* text-xl: grande, font-bold: negrita, text-foreground: color principal, mb-1: margen inferior */}
                                         {plan.name}
                                     </h3>
                                     <p className="text-sm text-muted-foreground"> {/* text-sm: pequeño, text-muted-foreground: color atenuado */}
                                         {plan.description}
                                     </p>
                                 </div>
-                                <div className="text-center mb-7"> {/* text-center, mb-6 */}
+                                <div className="text-center mb-8"> {/* text-center, mb-6 */}
                                     <span className="text-4xl font-extrabold text-foreground"> {/* text-4xl: muy grande, font-extrabold: muy negrita, text-foreground: color principal */}
                                         ${isYearly ? plan.priceYearly : plan.priceMonthly}
                                     </span>
@@ -142,7 +142,7 @@ export default function Component6Precios() {
                                         /{isYearly ? "año" : "mes"}
                                     </span>
                                 </div>
-                                <ul className="space-y-3 mb-4 flex-1"> {/* space-y-3: espacio entre items, mb-6: margen inferior, flex-1: ocupa espacio vertical disponible */}
+                                <ul className="space-y-4 mb-4 flex-1"> {/* space-y-3: espacio entre items, mb-6: margen inferior, flex-1: ocupa espacio vertical disponible */}
                                     {plan.features.map((feature, i) => (
                                         <li key={i} className="flex items-center gap-2 text-sm">
                                             <span className="text-primary">✓</span>

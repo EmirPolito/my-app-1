@@ -42,7 +42,7 @@ export const PinContainer = ({
         <div
           style={{ transform }}
           className={cn(
-            "absolute left-1/2 top-1/2 p-4 flex justify-start items-start rounded-2xl transition duration-700 overflow-hidden",
+            "absolute left-1/2 top-1/2 p-4 flex justify-start items-start rounded-2xl transition duration-600 overflow-hidden",
             "bg-background text-foreground border border-border shadow-md dark:shadow-lg",
             className
           )}
@@ -60,7 +60,7 @@ export const PinContainer = ({
 export const PinPerspective = ({ title }: { title?: string }) => {
   return (
     <motion.div className="pointer-events-none w-96 h-80 flex items-center justify-center opacity-0 group-hover/pin:opacity-100 z-20 transition duration-500">
-      <div className="w-full h-full -mt-7 flex-none inset-0">
+<div className="absolute inset-0 flex items-center justify-center">
 
         {/* TITULO */}
         <div className="absolute top-0 inset-x-0 flex justify-center">
@@ -83,7 +83,7 @@ export const PinPerspective = ({ title }: { title?: string }) => {
               initial={{ opacity: 0, scale: 0, x: "-50%", y: "-50%" }}
               animate={{ opacity: [0, 1, 0.5, 0], scale: 1 }}
               transition={{ duration: 6, repeat: Infinity, delay }}
-              className="absolute left-1/2 top-1/2 h-[11.25rem] w-[11.25rem] rounded-full bg-primary/10 shadow-md"
+              className="absolute left-1/2 top-1/2 h-[11.25rem] w-[11.25rem] rounded-full bg-primary/15 shadow-md"
             />
           ))}
         </div>
