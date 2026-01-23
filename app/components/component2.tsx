@@ -10,11 +10,11 @@ import createGlobe from "cobe";
 
 export function Component2() {
   return (
-    <section className="relative z-20 max-w-7xl mx-auto py-10 space-y-6">
+    <section className="relative z-20 max-w-6xl mx-auto py-0 space-y-6">
       {/* ROW 1 */}
       <div className="flex flex-col md:flex-row gap-4 items-stretch">
         {/* LEFT — GLOBE CARD */}
-        <div className="relative overflow-hidden rounded-2xl bg-card border border-border p-5 h-[26rem] w-full md:w-[30rem] flex flex-col">
+        <div className="relative overflow-hidden rounded-2xl bg-card border border-border p-5 h-[25rem] w-full md:w-[30rem] flex flex-col">
           <div className="relative z-10 space-y-1.5">
             <h3 className="text-primary-general text-base font-semibold">
               Hosting over the edge
@@ -32,7 +32,7 @@ export function Component2() {
         </div>
 
         {/* RIGHT — GLOBAL INFRASTRUCTURE */}
-        <div className="relative flex-1 rounded-2xl bg-card border border-border p-6 overflow-hidden">
+        <div className="relative flex-1 rounded-2xl bg-card border border-border p-5.5 overflow-hidden">
           <div className="max-w-md space-y-2">
             <h4 className="text-primary-general text-base font-semibold">
               Global infrastructure
@@ -50,8 +50,8 @@ export function Component2() {
                 draggable={false}
                 className="
                   w-40
-                  md:w-[47rem]
-                  h-[30rem]
+                  md:w-[39rem]
+                  h-[30.5rem]
                   object-cover
                   object-center
                   rounded-xl
@@ -105,7 +105,7 @@ export function Component2() {
         </div>
 
         {/* RIGHT — INTELLIGENT SCALING */}
-        <div className="relative overflow-hidden rounded-2xl bg-card border border-border p-5 h-[26rem] w-full md:w-[30rem] flex flex-col">
+        <div className="relative overflow-hidden rounded-2xl bg-card border border-border p-5.5 h-[26rem] w-full md:w-[30rem] flex flex-col">
           <div className="relative z-10 space-y-1.5">
             <h3 className="text-primary-general text-base font-semibold">
               Intelligent scaling
@@ -215,7 +215,7 @@ function Globe() {
     <canvas
       ref={canvasRef}
       className="translate-y-[8.75rem] scale-[1.2] aspect-square"
-      style={{ width: 450, height: 420, maxWidth: "100%" }}
+      style={{ width: 450, height: 420, maxWidth: "95%" }}
     />
   );
 }

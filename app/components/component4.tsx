@@ -4,13 +4,13 @@ import { PinContainer } from "@/app/components/ui/3d-pin";
 
 export function Component4() {
   return (
-    <div className="w-full flex items-center justify-center py-20">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20">
+    <div className="w-full flex items-center justify-center py-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
 
         {/* TARJETA 1 */}
         <PinContainer title="/visores-3d" href="/visores-3d">
-          <div className="flex basis-full flex-col p-4 tracking-tight text-primary-color-text w-[21rem] h-[21rem]">
+          <div className="flex basis-full flex-col p-4 tracking-tight text-primary-color-text w-[20rem] h-[20rem]">
             <h3 className="max-w-xs pb-3 m-0 font-bold text-base text-foreground">
               Titulo 1
             </h3>
@@ -23,7 +23,7 @@ export function Component4() {
 
         {/* TARJETA 2 — Realidad Aumentada */}
         <PinContainer title="/realidad-aumentada" href="/realidad-aumentada">
-          <div className="flex basis-full flex-col p-4 tracking-tight text-foreground/60 w-[21rem] h-[21rem]">
+          <div className="flex basis-full flex-col p-4 tracking-tight text-foreground/60 w-[20rem] h-[20rem]">
             <h3 className="max-w-xs pb-3 m-0 font-bold text-base text-foreground">
               Titulo 2
             </h3>
@@ -36,7 +36,7 @@ export function Component4() {
 
         {/* TARJETA 3 — Laboratorios Virtuales */}
         <PinContainer title="/laboratorios" href="/laboratorios">
-          <div className="flex basis-full flex-col p-4 tracking-tight text-foreground/60 w-[21rem] h-[21rem]">
+          <div className="flex basis-full flex-col p-4 tracking-tight text-foreground/60 w-[20rem] h-[20rem]">
             <h3 className="max-w-xs pb-3 m-0 font-bold text-base text-foreground">
               Titulo 3
             </h3>

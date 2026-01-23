@@ -4,7 +4,7 @@ import { PointerHighlight } from "@/app/components/ui/pointer-highlight";
 
 export function PointerHighlightDemo() {
   return (
-    <div className="mx-auto py-10 text-center">
+    <div className="mx-auto sm:mb-12 text-center my-25">
       <div className="text-primary-general whitespace-nowrap text-2xl font-bold tracking-tight md:text-4xl">
         {/* The best way to grow is to{" "} */}
         <PointerHighlight>

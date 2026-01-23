@@ -76,7 +76,7 @@ export default function Component6Precios() {
 
     return (
         <div className="min-h-screen bg-background text-foreground"> {/* min-h-screen: altura mínima pantalla completa, bg-background: fondo, text-foreground: color principal de texto */}
-            <main className="py-10"> {/* py-16: padding vertical grande */}
+            <main className="py-0"> {/* py-16: padding vertical grande */}
                 <div className="container"> {/* container: ancho máximo y centrado */}
                     {/* Hero Section */}
                     <div className="text-center mb-10"> {/* text-center: centra texto, mb-12: margen inferior */}
@@ -106,7 +106,7 @@ export default function Component6Precios() {
                     </div>
 
                     {/* Pricing Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto"> {/* grid: cuadrícula, grid-cols-1: 1 columna, md:grid-cols-2: 2 en md, lg:grid-cols-4: 4 en lg, gap-6: espacio entre tarjetas, max-w-7xl: ancho máximo, mx-auto: centrado */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 max-w-7xl mx-auto"> {/* grid: cuadrícula, grid-cols-1: 1 columna, md:grid-cols-2: 2 en md, lg:grid-cols-4: 4 en lg, gap-6: espacio entre tarjetas, max-w-7xl: ancho máximo, mx-auto: centrado */}
                         {plans.map((plan, index) => (
                             <div
                                 key={index}

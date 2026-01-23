@@ -117,7 +117,7 @@ export function ThemeSwitcher() {
     };
 
     return (
-        <div className="flex gap-2 items-center">
+        <div className="flex gap-3 items-center">
             {/* Theme Mode Button */}
             <button
                 onClick={cycleTheme}
@@ -129,7 +129,7 @@ export function ThemeSwitcher() {
             </button>
 
             {/* Divider */}
-            <div className="w-px h-6 bg-[var(--border)]" />
+            <div className="w-px h-6 bg-[var(--divider-color)]" />
             <Select value={color} onValueChange={(value) => setColor(value as ColorTheme)}>
                 <SelectTrigger className="h-8 w-28 text-xs cursor-pointer">
                     <SelectValue placeholder="Color" />

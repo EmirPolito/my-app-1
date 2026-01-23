@@ -119,8 +119,8 @@ export default function CrossLayoutLines() {
   }, [])
 
   return (
-    <section className="w-full py-0">
-      <div className="relative max-w-7xl mx-auto">
+    <section className="w-full py-12">
+      <div className="relative max-w-6xl mx-auto">
         {/* Líneas estructurales */}
         <div className="absolute top-0 left-0 right-0 h-px bg-border/90" />
         <div className="absolute top-1/2 left-0 right-0 h-px bg-border/90" />

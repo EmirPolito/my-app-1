@@ -15,10 +15,12 @@ export function Header() {
         supports-backdrop-filter:bg-background/60 /* Fondo con opacidad 60% si se soporta backdrop-filter */
         "
     >
-      <div className="container relative flex h-20 items-center">
+      <div className="container relative flex h-22 items-center">
         {/* Logo - Far left */}
-        <a className="flex items-center shrink-0 w-20" href="/">
-          <span className="font-bold text-foreground">Startup</span>
+        <a className="flex items-center shrink-0 w-30" href="/">
+          <span className="font-bold text-foreground">
+            Arcoms <span className="font-light">Edu</span>
+          </span>
         </a>
 
         {/* Nav - Centered absolutely */}

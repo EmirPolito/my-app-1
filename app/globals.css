@@ -1,8 +1,8 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@custom-variant dark (&:is(.dark *));
 
-/* =====================================================
-   THEME SYSTEM (shadcn/ui compatible) — HEX COLORS
-   ===================================================== */
+
 
 /* --------------------
    LIGHT (default)
@@ -13,6 +13,7 @@
   --primary-color-text: #8d8d8d;
   --primary-general: #000000;
   --primary-header: #363636;
+    --divider-color: #393939; /* /header linea vertical divisora entre modo y colores*/
 
 
   /* color del componente de las 3 tarjetas  */
@@ -26,8 +27,6 @@
   --primary-ComponentCruz-2:  #8d8d8d;
   --primary-ComponentCruz-3:  #8d8d8d;
   --primary-ComponentCruz-4:  #8d8d8d;
-
-
 
   --primary-foreground: #fafafa;
 
@@ -57,6 +56,8 @@
   --ring: var(--primary);
 }
 
+
+
 /* --------------------
    DARK
    -------------------- */
@@ -65,23 +66,19 @@
   --primary-color-text: #bababa;   /* Para descripiones - no cambia en los modos */
   --primary-general: #ffffffeb;   /* para los titulos - si cambia en los modos */
   --primary-header: #ffffff;  /* especialmente para header color gris mas fuerte - cambia de modo al pasar el cursor */
+  --divider-color: #393939; /* /header linea vertical divisora entre modo y colores*/
 
-
-  
   /* color del componente de las 3 tarjetas  */
   --primary-color-1: #1cff10ce;
   --primary-color-2: #00b7ff;
   --primary-color-3: #e600ff;
   --primary-color-linea: #d6d6d6;
 
-
     /* color del componente Cruz  */
   --primary-ComponentCruz-1: #010101;
   --primary-ComponentCruz-2:  #010101;
   --primary-ComponentCruz-3:  #010101;
   --primary-ComponentCruz-4:  #010101;
-
-
 
   --background: #000000;
   --foreground: #fafafa;
@@ -93,7 +90,7 @@
   --primary5: #000000;
 
   --buttonC: #2f2f2f;
-  
+
   /* --component5: #efefef; */
   --primary-foreground: #fafafa;
 
@@ -122,8 +119,6 @@
   --primary-color-linea: #008cff;
   --primary-header: #2563eb;
 
-
-
   --primary: #2563eb;
   --primary2: #ffffff;
   --primary3: #2563eb;
@@ -135,9 +130,6 @@
   --primary-ComponentCruz-2:  #8d8d8d;
   --primary-ComponentCruz-3:  #8d8d8d;
   --primary-ComponentCruz-4:  #8d8d8d;
-
-
-
 
   --buttonC: #2563eb;
   --component5: #2563eb;
@@ -174,7 +166,6 @@
   --primary-general: #ff6a00;
     --primary-header: #ff6a00;
 
-
   --primary: #ff6a00;
   --primary2: #ffffff;
   --primary3: #ff6a00;
@@ -188,21 +179,17 @@
   --primary-color-3: #ff6a00;
   --primary-color-linea: #e2e2e2;
 
-
     /* color del componente Cruz  */
   --primary-ComponentCruz-1: #7c4408;
   --primary-ComponentCruz-2:  #8d8d8d;
   --primary-ComponentCruz-3:  #8d8d8d;
   --primary-ComponentCruz-4:  #8d8d8d;
 
-
-
 }
 
 [data-color="blue"] {
   --primary-general: #0062ff;
     --primary-header: #0062ff;
-
 
   --primary: #0062ff;
   --primary2: #ffffff;
@@ -223,13 +210,11 @@
   --primary-ComponentCruz-3:  #8d8d8d;
   --primary-ComponentCruz-4:  #8d8d8d;
 
-
 }
 
 [data-color="green"] {
   --primary-general: #68b701;
     --primary-header: #68b701;
-
 
   --primary: #68b701;
   --primary2: #ffffff;
@@ -250,13 +235,11 @@
   --primary-ComponentCruz-3:  #8d8d8d;
   --primary-ComponentCruz-4:  #8d8d8d;
 
-
 }
 
 [data-color="violet"] {
   --primary-general: #4600e9;
     --primary-header: #4600e9;
-
 
   --primary: #4600e9;
   --primary2: #ffffff;
@@ -277,13 +260,11 @@
   --primary-ComponentCruz-3:  #8d8d8d;
   --primary-ComponentCruz-4:  #8d8d8d;
 
-
 }
 
 [data-color="rose"] {
   --primary-general: #ff002b;
     --primary-header: #ff002b;
-
 
   --primary: #ff002b;
   --primary2: #ffffff;
@@ -304,13 +285,11 @@
   --primary-ComponentCruz-3:  #8d8d8d;
   --primary-ComponentCruz-4:  #8d8d8d;
 
-
 }
 
 [data-color="yellow"] {
   --primary-general: #dcb700;
     --primary-header: #dcb700;
-
 
   --primary: #dcb700;
   --primary2: #ffffff;
@@ -331,7 +310,6 @@
   --primary-ComponentCruz-3:  #8d8d8d;
   --primary-ComponentCruz-4:  #8d8d8d;
 
-
 }
 
 /* =====================================================
@@ -342,6 +320,7 @@
   --color-primary-color-text: var(--primary-color-text);
   --color-primary-general: var(--primary-general);
   --color-primary-header: var(--primary-header);
+  --color-divider-color: var(--divider-color);
 
   /* color del componente de las 3 tarjetas  */
   --color-primary-color-1: var(--primary-color-1);
@@ -349,18 +328,11 @@
   --color-primary-color-3: var(--primary-color-3);
   --color-primary-color-linea: var(--primary-color-linea);
 
-
   /* color del componente Cruz  */
   --color-primary-ComponentCruz-1: var(--primary-ComponentCruz-1);
   --color-primary-ComponentCruz-2: var(--primary-ComponentCruz-2);
   --color-primary-ComponentCruz-3: var(--primary-ComponentCruz-3);
   --color-primary-ComponentCruz-4: var(--primary-ComponentCruz-4);
-
-
-
-
-
-
 
   --color-primary: var(--primary);
   --color-primary2: var(--primary2);
@@ -370,7 +342,6 @@
 
   --color-buttonC: var(--buttonC);
   --color-component4: var(--component4);
-
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -384,7 +355,6 @@
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
 
- 
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
 
@@ -400,6 +370,24 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --animate-marquee: marquee var(--duration) infinite linear;
+  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+  @keyframes marquee {
+  from {
+    transform: translateX(0);
+    }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+  @keyframes marquee-vertical {
+  from {
+    transform: translateY(0);
+    }
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+    }
+  }
 }
 
 /* =====================================================
@@ -416,4 +404,13 @@ body {
   max-width: 1200px;
   margin-inline: auto;
   padding-inline: 1rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }

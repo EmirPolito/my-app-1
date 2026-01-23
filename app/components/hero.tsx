@@ -13,7 +13,7 @@ export function Hero() {
           <div className="flex flex-col items-center text-center gap-1 pt-1">
             {/* Title */}
             <h1 className="text-primary-general font-bold md:text-[4rem] text-text-heading">
-              Titulo
+              UI Design System
             </h1>
 
             {/* Description */}
@@ -48,7 +48,7 @@ export function Hero() {
         }
       >
         <img
-          src="/img/hero.jpg"
+          src="/img/heroo.png"
           alt="hero"
           height={750}
           width={1200}
